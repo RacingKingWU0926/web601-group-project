@@ -35,14 +35,6 @@ ol, ul {
 		line-height: 2.25em;
 	}
 
-	input, select, textarea {
-		font-family: 'Open Sans', sans-serif;
-		font-size: 13pt;
-		color: #696969;
-		font-weight: 300;
-		line-height: 2.25em;
-	}
-
 	a {
 		color: #0090c5;
 		text-decoration: underline;
@@ -75,38 +67,45 @@ ol, ul {
 	}
 
 /* Container */
-
 	.container {
 		margin: 0 auto;
-		max-width: 100%;
-		width: 1400px;
+		max-width: 95%;
 	}
+
+/* Header */
+	.main-header {
+		background-color: rgb(0, 96, 175, 0.9);
+		min-height: 120px;
+		height: 120px;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.nav-item {
+			display: inline-block;
+			padding: 25px;
+		}
+			.nav-item a {
+				font-family: Tahoma;
+				font-size: 25px;
+				font-weight: bold;
+				text-decoration: none;
+				text-transform: uppercase;
+				text-align: center;
+				color: #fff;
+				margin: 0 1em;
+			}
 
 
 /* Row */
-
 	.row {
 		display: flex;
 		flex-wrap: wrap;
 		box-sizing: border-box;
 		align-items: stretch;
 	}
-
-		.row > * {
-			box-sizing: border-box;
-		}
-
-		.row.gtr-uniform > * > :last-child {
-			margin-bottom: 0;
-		}
-
-		.row > .imp {
-			order: -1;
-		}
-
-		.row > .col-1 {
-			width: 8.33333%;
-		}
 
 		.row > .col-3 {
 			width: 25%;
@@ -144,58 +143,14 @@ ol, ul {
 			width: 100%;
 		}
 
-
-		.row.gtr-50 {
-			margin-top: -20px;
-			margin-left: -20px;
-		}
-
-			.row.gtr-50 > * {
-				padding: 20px 0 0 20px;
-			}
-
-			.row.gtr-50.gtr-uniform {
-				margin-top: -20px;
-			}
-
-				.row.gtr-50.gtr-uniform > * {
-					padding-top: 20px;
-				}
-
 		.row {
 			margin-top: -40px;
 			margin-left: -40px;
 		}
 
-			.row > * {
-				padding: 40px 0 0 40px;
-			}
-
-			.row.gtr-uniform {
-				margin-top: -40px;
-			}
-
-				.row.gtr-uniform > * {
-					padding-top: 40px;
-				}
-
-
-		.row.gtr-200 {
-			margin-top: -80px;
-			margin-left: -80px;
+		.row > * {
+			padding: 40px 0 0 40px;
 		}
-
-			.row.gtr-200 > * {
-				padding: 80px 0 0 80px;
-			}
-
-			.row.gtr-200.gtr-uniform {
-				margin-top: -80px;
-			}
-
-				.row.gtr-200.gtr-uniform > * {
-					padding-top: 80px;
-				}
 
 /* Image */
 
@@ -221,20 +176,6 @@ ol, ul {
 			margin: 0 0 2.5em 0;
 		}
 
-		.image.left {
-			float: left;
-			margin: 0 2em 2em 0;
-		}
-
-		.image.centered {
-			display: block;
-			margin: 0 0 2.5em 0;
-		}
-
-			.image.centered img {
-				margin: 0 auto;
-				width: auto;
-			}
 
 /* Button */
 
@@ -245,7 +186,7 @@ ol, ul {
 	.button {
 		position: relative;
 		display: inline-block;
-		background: #80caf6;
+		background: #38505d;
 		color: #fff;
 		text-decoration: none;
 		border-radius: 6px;
@@ -320,73 +261,6 @@ ol, ul {
 			padding: 0.8em 0.9em;
 		}
 
-/* List */
-
-	ul {
-		list-style: disc;
-		padding-left: 1em;
-	}
-
-		ul li {
-			padding-left: 0.5em;
-		}
-
-		ul.style2 {
-			list-style: none;
-			padding-left: 0;
-		}
-
-			ul.style2 li {
-				padding-left: 0;
-			}
-
-	ol {
-		list-style: decimal;
-		padding-left: 1.25em;
-	}
-
-		ol li {
-			padding-left: 0.25em;
-		}
-
-/* Actions */
-
-	ul.actions {
-		list-style: none;
-		padding-left: 0;
-	}
-
-		ul.actions li {
-			display: inline-block;
-			padding: 0 0 0 0.25em;
-			margin: 0 0 0 0.25em;
-		}
-
-			ul.actions li:first-child {
-				margin-left: 0;
-				padding-left: 0;
-			}
-
-/* Menu */
-
-	ul.menu {
-		list-style: none;
-		padding-left: 0;
-	}
-
-		ul.menu li {
-			border-left: solid 1px #e0e0e0;
-			display: inline-block;
-			padding: 0 0 0 0.75em;
-			margin: 0 0 0 0.75em;
-		}
-
-			ul.menu li:first-child {
-				border-left: 0;
-				margin-left: 0;
-				padding-left: 0;
-			}
-
 /* Box */
 
 	.box {
@@ -457,59 +331,6 @@ ol, ul {
 			display: none;
 		}
 
-/* Widgets */
-
-	.widget.thumbnails .grid {
-		margin: 0 0 3em 0;
-	}
-
-	.widget.thumbnails .image {
-		margin: 0;
-	}
-
-	.widget.contact ul {
-		list-style: none;
-		padding-left: 0;
-		overflow: hidden;
-		position: relative;
-		left: -4px;
-		top: 4px;
-		margin-bottom: 1.5em;
-	}
-
-		.widget.contact ul li {
-			display: inline-block;
-			margin-right: 0.25em;
-			padding-left: 0;
-		}
-
-			.widget.contact ul li a {
-				display: inline-block;
-				width: 2.5em;
-				height: 2.5em;
-				text-align: center;
-				line-height: 2.5em;
-				border-radius: 0.35em;
-				outline: 0;
-				opacity: 0.75;
-				text-decoration: none;
-				background: #222222;
-			}
-
-				.widget.contact ul li a:before {
-					color: #f3f3f3;
-					font-size: 1.5em;
-					line-height: inherit;
-				}
-
-				.widget.contact ul li a:hover {
-					background: #444444;
-				}
-
-				.widget.contact ul li a:active {
-					background: #666666;
-				}
-
 /* Wrappers */
 
 	#header-wrapper {
@@ -530,325 +351,45 @@ ol, ul {
 		padding: 6em 0 8em 0;
 	}
 
-/* Header */
-
-	#header {
-		position: relative;
-	}
-
-/* Logo */
-
-	#logo {
-		display: inline-block;
-	}
-
-		#logo h1 {
-			background: #80caf6;
-			color: #fff;
-			border-radius: 6px;
-			font-family: 'Oleo Script', serif;
-			font-weight: 400;
-			padding: 0.25em 0.2em 0.25em 0.2em;
-			font-size: 3.25em;
-			letter-spacing: 0.05em;
-			display: inline-block;
-			vertical-align: middle;
-		}
-
-		#logo span {
-			font-weight: 800;
-			line-height: 4.5em;
-			letter-spacing: 0.025em;
-			font-size: 0.9em;
-			vertical-align: middle;
-			margin: 0 0 0 1.25em;
-		}
-
-/* Nav */
-
-	#nav {
-		position: absolute;
-		right: 0;
-		top: 0;
-		font-size: 0.9em;
-	}
-
-		#nav ul {
-			list-style: none;
-			padding-left: 0;
-		}
-
-			#nav ul li {
-				float: left;
-				line-height: 4.5em;
-				padding-left: 1.5em;
-			}
-
-				#nav ul li a, #nav ul li span {
-					-moz-transition: background-color .25s ease-in-out;
-					-webkit-transition: background-color .25s ease-in-out;
-					-ms-transition: background-color .25s ease-in-out;
-					transition: background-color .25s ease-in-out;
-					font-weight: 800;
-					letter-spacing: 0.025em;
-					color: #696969;
-					text-decoration: none;
-					border-radius: 6px;
-					padding: 0.5em 1em 0.5em 1em;
-				}
-
-				#nav ul li > ul {
-					display: none;
-				}
-
-				#nav ul li:hover a, #nav ul li:hover span {
-					background: #fff;
-				}
-
-				#nav ul li.active a, #nav ul li.active span {
-					background: #fff;
-				}
-
-				#nav ul li.current a {
-					background: #444;
-					color: #fff;
-				}
-
 /* Banner */
 
 	#banner {
-		position: relative;
-		padding: 4.5em;
+		background: no-repeat url(images/banner.jpg);
+		background-position: center center;
+		background-size: cover;
+		padding: 5em;
 	}
+		#banner-text {
+			flex: 0 0 30%;
+			max-width: 30%;
+			margin-left: 3em;
+		}
+			#banner h2 {
+				font-size: 3.5em;
+				margin: 0.1em 0 0.35em 0;
+				text-transform: uppercase;
+				color: #fff;
+				text-shadow: 2px 1px 6px rgba(0, 0, 0, 0.8);
+			}
+			#banner h6 {
+				font-size: 1.5em;
+				margin: 3em 0;
+				color: #fff;
+			}
 
-		#banner h2 {
-			font-size: 3.5em;
-			margin: 0.1em 0 0.35em 0;
+		#banner-signup {
+			max-width: 30%;
+			margin-left: 35%;
 		}
 
-		#banner p {
-			font-size: 2.75em;
-			line-height: 1.35em;
-			margin: 0;
-		}
+			#banner-signup .button {
+				width: 70%;
+				margin-bottom: 1em;
+			}
 
-		#banner .button {
-			width: 100%;
-			margin-bottom: 0.5em;
-		}
-
-			#banner .button.icon:before {
+			#banner-signup .button.icon:before {
 				position: absolute;
 				right: 0.15em;
 				top: 50%;
 				margin-top: -0.5em;
 			}
-
-			#banner .button.alt {
-				margin-bottom: 0;
-			}
-
-		#banner ul {
-			list-style: none;
-			padding-left: 0;
-			margin: 0 0 0 2em;
-		}
-
-			#banner ul li {
-				padding-left: 0;
-			}
-
-/* Footer */
-
-	#footer {
-		margin-top: 0;
-	}
-
-		#footer a {
-			color: inherit;
-		}
-
-	#copyright {
-		color: #aaa;
-		padding: 4em 0 0 0;
-		text-align: center;
-	}
-
-		#copyright a {
-			color: inherit;
-		}
-
-/* XLarge */
-
-	@media screen and (max-width: 1680px) {
-
-		/* Basic */
-
-			body, input, select, textarea {
-				font-size: 12pt;
-			}
-
-	}
-
-/* Large */
-
-	@media screen and (max-width: 1280px) {
-
-		/* Basic */
-
-			body, input, select, textarea {
-				font-size: 11pt;
-			}
-
-	}
-
-/* Medium */
-
-	#navPanel, #navToggle {
-		display: none;
-	}
-
-	@media screen and (max-width: 980px) {
-
-		/* Basic */
-
-			html, body {
-				overflow-x: hidden;
-			}
-
-			body, input, select, textarea {
-				font-size: 11pt;
-			}
-
-		/* Section */
-
-			section {
-				clear: both;
-				margin-bottom: 3em !important;
-			}
-
-			section.last {
-				margin-bottom: 0 !important;
-			}
-
-		/* Image */
-
-			.image.left {
-				width: 25%;
-				margin-bottom: 2em !important;
-			}
-
-		/* Menu */
-
-			ul.menu li {
-				display: block;
-				border: 0 !important;
-				padding: 0 !important;
-				margin: 0 !important;
-			}
-
-		/* Button */
-
-			input[type="button"],
-			input[type="submit"],
-			input[type="reset"],
-			button,
-			.button {
-				width: 100%;
-				text-align: center;
-				font-size: 1.35em;
-				padding: 0.85em 0 !important;
-			}
-
-				input[type="button"].icon,
-				input[type="submit"].icon,
-				input[type="reset"].icon,
-				button.icon,
-				.button.icon {
-					padding-right: 0.75em !important;
-				}
-
-					input[type="button"].icon:before,
-					input[type="submit"].icon:before,
-					input[type="reset"].icon:before,
-					button.icon:before,
-					.button.icon:before {
-						margin-right: 0.5em;
-						top: 0.05em;
-					}
-
-		/* Wrappers */
-
-			#header-wrapper {
-				padding: 3em 0 1em 0;
-				text-align: center;
-			}
-
-			#footer-wrapper {
-				padding: 6em 0 4em 0;
-			}
-
-		/* Header */
-
-			#header {
-				margin: 0 auto;
-			}
-
-		/* Logo */
-
-			#logo span {
-				display: block;
-				margin: 0;
-			}
-
-		/* Nav */
-
-			#nav {
-				display: none;
-			}
-
-		/* Banner */
-
-			#banner {
-				padding: 4.5em 3em;
-				text-align: center;
-			}
-
-				#banner ul {
-					margin: 2em 0 0 0;
-				}
-
-				#banner .button.icon:before {
-					position: relative;
-					right: auto;
-					top: auto;
-				}
-
-		/* Content */
-
-			#content {
-				border-bottom: solid 1px #e8e8e8;
-				padding-bottom: 4em;
-				margin-bottom: 0 !important;
-			}
-
-				#content > :last-child {
-					margin-bottom: 0 !important;
-				}
-
-			#sidebar > :last-child {
-				margin-bottom: 0 !important;
-			}
-
-		/* Footer */
-
-			#copyright {
-				padding: 0;
-			}
-
-		/* Nav */
-
-			#page-wrapper {
-				padding-bottom: 1px;
-			}
-}
