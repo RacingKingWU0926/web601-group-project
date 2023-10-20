@@ -479,3 +479,64 @@ ol, ul {
 	opacity: 0.7;
 	background-position: center center;
 }
+
+/* Contact Form */
+#signup form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 50%;
+	margin: 6em auto;
+    padding: 30px 50px;
+    font-family: Arial, Helvetica, sans-serif;
+	border: 2px solid ;
+
+}
+
+#signup legend {
+	font-size: 2em;
+	font-weight: bold;
+	color: #000;
+}
+.required-mark {
+	color: #d63d1f;
+	font-size: 16px;
+	font-weight: 600;
+	margin: 0 10px;
+}
+.required-statement {
+	font-size: 14px;
+	margin-bottom: 10px;
+	margin-top: 16px;
+}
+
+.input-group-error {
+	display: flex;
+	color: #d1201d;
+	font-size: 14px;
+}
+
+.input-group-valid {
+	display: flex;
+	color: green;
+	font-size: 14px;
+}
+
+.form-check {
+	font-size: 16px;
+}
+
+.form-check-label {
+	line-height: 1.4;
+}
+
+.signup-action {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+#back-btn, #submit-btn {
+	height: 50px;
+	width: 170px;
+}
