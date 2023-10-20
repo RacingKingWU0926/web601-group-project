@@ -347,10 +347,6 @@ ol, ul {
 		padding: 5em 0 5em 0;
 	}
 
-	#footer-wrapper {
-		padding: 6em 0 8em 0;
-	}
-
 /* Banner */
 
 	#banner {
@@ -393,3 +389,73 @@ ol, ul {
 				top: 50%;
 				margin-top: -0.5em;
 			}
+
+/* Partners */
+
+/* Footer */
+	.footer {
+		background-color: #434347;
+		padding: 3em 0 0 0;
+		margin: 0;
+	}
+		.footer > .row {
+			justify-content: center;
+		}
+		.footer > .row > .logo {
+			padding: 6em;
+		}
+		.footer-nav {
+			font-size: 30px;
+			margin-top: 1.3em;
+		}
+			.footer-nav ul {
+				list-style: none;
+			}
+				.footer-nav ul li {
+					margin-bottom: 1rem;
+					font-family: Verdana, Geneva, Tahoma, sans-serif;
+				}
+					.footer-nav ul li a {
+						text-decoration: none;
+						color: #fff;
+					}
+
+		.social {
+			padding: 3em;
+			
+		}
+			.fa {
+				padding: 15px;
+				font-size: 40px;
+				width: 45px;
+				text-align: center;
+				text-decoration: none;
+				margin: 0 4px;
+				border-radius: 50%;
+				color: #fff;
+			}
+		.footer-signup p {
+			display: block;
+			margin-block-start: 1em;
+			margin-block-end: 1em;
+			line-height: 26px;
+			margin-top: 1rem;
+			margin-bottom: 2rem;
+			font-size: 1.2em;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+			color: #fff;
+		}
+		.subscribe-btn {
+			display: block;
+			background-color: #01a490;
+			width: 10em;
+			font-size: 2em;
+		}
+
+	.footer-copyright {
+		padding: 1rem;
+		background-color: #323232;
+		font-size: 1.2em;
+		color: #fff;
+	}
+
