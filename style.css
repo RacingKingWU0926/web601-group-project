@@ -540,3 +540,9 @@ ol, ul {
 	height: 50px;
 	width: 170px;
 }
+
+/* schedules */
+#schedules .banner {
+	background-image: url(images/woman-swimmer.jpg);
+	background-position: center center;
+}
