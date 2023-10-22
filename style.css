@@ -480,6 +480,12 @@ ol, ul {
 	background-position: center center;
 }
 
+/* schedules */
+#schedules .banner {
+	background-image: url(images/woman-swimmer.jpg);
+	background-position: center center;
+}
+
 /* Contact Form */
 #signup form {
 	display: flex;
