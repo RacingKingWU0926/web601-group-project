@@ -472,6 +472,9 @@ ol, ul {
 	background-position: center center;
 }
 
+#welcome {
+	padding: 0 3em;
+}
 
 /* Programs */
 #programs .banner {
