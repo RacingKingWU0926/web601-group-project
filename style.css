@@ -672,6 +672,31 @@ ol, ul {
 	}
 }
 
+/* Banner */
+@media (max-width: 992px) {
+	.banner-text {
+		max-width: 60%;
+	}
+	.banner-text h2 {
+		font-size: 40px;
+		margin-left: 1em;
+	}
+	.banner-text h6 {
+		font-size: 24px;
+		margin-left: 2em;
+	}
+	.last h2 {
+		font-size: 30px;
+	}
+}
+
+/* Table */
+@media (max-width: 1200px) {
+	#schedules .table th, td {
+		font-size: 14px;
+	}
+}
+
 /* Footer */
 @media (max-width: 992px) {
 	footer .logo {
