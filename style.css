@@ -381,15 +381,15 @@ ol, ul {
 /* Partners */
 
 /* Footer */
-	.footer {
+	footer {
 		background-color: #434347;
 		padding: 3em 0 0 0;
 		margin: 0;
 	}
-		.footer > .row {
+		footer > .row {
 			justify-content: center;
 		}
-		.footer > .row > .logo {
+		footer > .row > .logo {
 			padding: 6em;
 		}
 		.footer-nav {
@@ -659,4 +659,46 @@ ol, ul {
     #navbarNavDropdown ul li a {
 		font-size: 15px;
     }
+}
+
+/* Signup Form */
+@media (max-width: 1200px) {
+	#signup form {
+		width: 80%;
+	}
+	#back-btn, #submit-btn {
+		height: 50px;
+		width: 100px;
+	}
+}
+
+/* Footer */
+@media (max-width: 992px) {
+	footer .logo {
+		display: flex;
+		justify-content: center;
+		margin-bottom: -5em;
+	}
+    .footer-nav {
+		font-size: 20px;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		margin-right: 2em;
+	}
+	.social-icons {
+		display: flex;
+		justify-content: center;
+	}
+	.footer-signup p {
+		font-size: 18px;
+		text-align: center;
+	}
+	.subscribe-btn {
+		margin-left: 3.5em;
+		font-size: 1.5em;
+	}
+	.footer-copyright {
+		font-size: 15px;	
+	}
 }
