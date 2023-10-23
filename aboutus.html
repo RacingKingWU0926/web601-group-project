@@ -16,35 +16,42 @@
 	<body id="aboutus">
 
 		<!-- Header -->
-		<header id="header-wrapper">
+		<header id="header-wrapper" class="sticky-top">
 			<div class="main-header">
 				<!-- Logo -->
 				<div class="logo">
-					<a href="/" title="Splashes">
+					<a href="index.html" title="Splashes">
 						<img src="images/logo.png" alt="Logo" width="125">
 					</a>
 				</div>
 				<!-- Main Nav -->
-				<div>
-					<nav id="main-nav">
-						<div class="navbar-collapse">
-							<ul class="navbar">
-								<li class="nav-item active">
-									<a href="/">home</a>
-								</li>
-								<li class="nav-item">
-									<a href="programs.html">programs</a>
-								</li>
-								<li class="nav-item">
-									<a href="schedules.html">schedules</a>
-								</li>
-								<li class="nav-item">
-									<a href="aboutus.html">about us</a>
-								</li>
-							</ul>
-						</div>
-					</nav>
-				</div>
+				<nav class="main-nav navbar navbar-expand-xl navbar-dark">
+					<!-- Hamburger Menu Button -->
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarNavDropdown">
+						<ul class="navbar navbar-nav">
+							<li class="nav-item active">
+								<a href="/">home</a>
+							</li>
+							<li class="nav-item">
+								<a href="programs.html">programs</a>
+							</li>
+							<li class="nav-item">
+								<a href="schedules.html">schedules</a>
+							</li>
+							<li class="nav-item active">
+								<a href="aboutus.html">about us</a>
+							</li>
+							<li class="nav-item">
+								<a href="signup.html">sign up</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+
 			</div>
 		</header>
 
@@ -88,7 +95,7 @@
 		</section>
 
 		<!-- Footer -->
-		<div class="footer">
+		<footer>
 
 			<!-- footer-nav & signup -->
 			<div class="row">
@@ -97,7 +104,7 @@
 						<img src="images/logo.png" alt="Logo" width="200">
 					</a>
 				</div>
-				<div class="col-4">
+				<div class="col-12 col-md-4">
 					<nav class="footer-nav">
 						<ul>
 							<li><a href="/">News</a></li>
@@ -107,7 +114,7 @@
 						</ul>
 					</nav>
 				</div>
-				<div class="social col-3">
+				<div class="social col-12 col-md-4">
 					<div class="social-icons">
 						<a href="#" class="fa fa-facebook-square"></a>
 						<a href="#" class="fa fa-instagram"></a>
@@ -116,7 +123,7 @@
 					</div>
 					<div class="footer-signup">
 						<p>Be the first to know about our programs and upcoming events!</p>
-						<button class="btn btn-info large subscribe-btn">Subscribe</button>
+						<button class="btn btn-info large subscribe-btn" onclick="window.location.href='signup.html';">Subscribe</button>
 					</div>
 				</div>
 			</div>
@@ -130,7 +137,7 @@
 					<p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
 				</div>
 			</div>
-		</div>
+		</footer>
 
 
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->

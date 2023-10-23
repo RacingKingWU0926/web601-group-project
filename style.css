@@ -254,7 +254,6 @@ ol, ul {
 		input[type="reset"].large,
 		button.large,
 		.button.large {
-			font-size: 2.25em;
 			padding: 0.8em 0.9em;
 		}
 
@@ -378,37 +377,19 @@ ol, ul {
 				color: #fff;
 			}
 
-		.banner-signup {
-			display: flex;
-			padding: 7em;
-			/* max-width: 30%; */
-			justify-content: right;
-		}
-
-			.banner-signup .button {
-				width: 70%;
-				margin-bottom: 1em;
-			}
-
-			.banner-signup .button.icon:before {
-				position: absolute;
-				right: 0.15em;
-				top: 50%;
-				margin-top: -0.5em;
-			}
 
 /* Partners */
 
 /* Footer */
-	.footer {
+	footer {
 		background-color: #434347;
 		padding: 3em 0 0 0;
 		margin: 0;
 	}
-		.footer > .row {
+		footer > .row {
 			justify-content: center;
 		}
-		.footer > .row > .logo {
+		footer > .row > .logo {
 			padding: 6em;
 		}
 		.footer-nav {
@@ -472,6 +453,9 @@ ol, ul {
 	background-position: center center;
 }
 
+#welcome {
+	padding: 0 3em;
+}
 
 /* Programs */
 #programs .banner {
@@ -653,4 +637,93 @@ ol, ul {
 #sendinfo input[type="email"] {
     width: 200px;
     margin-right: 10px;
+}
+
+
+/* Media Queries */
+/* Navbar: collapse for lg- viewport */
+@media (max-width: 1200px) {
+	.main-header {
+		display: flex;
+		justify-content: space-between;
+	}
+    .logo {
+        margin-top: -14px;
+		margin-left: 2em;
+    }
+
+	#navbarNavDropdown ul {
+		/* background-color: red; */
+		margin-top: 2em;
+	}
+    #navbarNavDropdown ul li a {
+		font-size: 15px;
+    }
+}
+
+/* Signup Form */
+@media (max-width: 1200px) {
+	#signup form {
+		width: 80%;
+	}
+	#back-btn, #submit-btn {
+		height: 50px;
+		width: 100px;
+	}
+}
+
+/* Banner */
+@media (max-width: 992px) {
+	.banner-text {
+		max-width: 60%;
+	}
+	.banner-text h2 {
+		font-size: 40px;
+		margin-left: 1em;
+	}
+	.banner-text h6 {
+		font-size: 24px;
+		margin-left: 2em;
+	}
+	.last h2 {
+		font-size: 30px;
+	}
+}
+
+/* Table */
+@media (max-width: 1200px) {
+	#schedules .table th, td {
+		font-size: 14px;
+	}
+}
+
+/* Footer */
+@media (max-width: 992px) {
+	footer .logo {
+		display: flex;
+		justify-content: center;
+		margin-bottom: -5em;
+	}
+    .footer-nav {
+		font-size: 20px;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		margin-right: 2em;
+	}
+	.social-icons {
+		display: flex;
+		justify-content: center;
+	}
+	.footer-signup p {
+		font-size: 18px;
+		text-align: center;
+	}
+	.subscribe-btn {
+		margin-left: 3.5em;
+		font-size: 1.5em;
+	}
+	.footer-copyright {
+		font-size: 15px;	
+	}
 }

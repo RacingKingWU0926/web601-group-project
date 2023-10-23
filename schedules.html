@@ -45,7 +45,7 @@
 	<body id="schedules">
 
 		<!-- Main Header -->
-		<header id="header-wrapper">
+		<header id="header-wrapper" class="sticky-top">
 			<div class="main-header">
 				<!-- Logo -->
 				<div class="logo">
@@ -54,26 +54,32 @@
 					</a>
 				</div>
 				<!-- Main Nav -->
-				<div>
-					<nav id="main-nav">
-						<div class="navbar-collapse">
-							<ul class="navbar">
-								<li class="nav-item active">
-									<a href="index.html">home</a>
-								</li>
-								<li class="nav-item">
-									<a href="programs.html">programs</a>
-								</li>
-								<li class="nav-item">
-									<a href="schedules.html">schedules</a>
-								</li>
-								<li class="nav-item">
-									<a href="aboutus.html">about us</a>
-								</li>
-							</ul>
-						</div>
-					</nav>
-				</div>
+				<nav class="main-nav navbar navbar-expand-xl navbar-dark">
+					<!-- Hamburger Menu Button -->
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarNavDropdown">
+						<ul class="navbar navbar-nav">
+                            <li class="nav-item">
+                                <a href="index.html">home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="programs.html">programs</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a href="schedules.html">schedules</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="aboutus.html">about us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="signup.html">sign up</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
 			</div>
 		</header>
 
@@ -82,7 +88,7 @@
 			<div class="banner">
 				<div class="row">
 					<div class="banner-text" class=" col-7 col-12-medium">
-						<h2>learn to swim at splashes</h2>
+						<h2>Check Out Our Fall-Winter Schedules</h2>
 						<h6></h6>
 					</div>
 				</div>
@@ -116,27 +122,24 @@
 		<div id="main-wrapper">
 			<div class="container">
 				<div class="row gtr-200">
-					<div class="col-3 col-12-medium">
-
-						<!-- Sidebar -->
-							<div id="sidebar">
-								<section class="thumbnails">
-									<h3> </h3>
-									<div class="grid">
-										<div class="row gtr-50">
-											<div class="col-10"><a href="#" class="image fit"><img src="images/familyswim.jpg" alt="familyswim" /></a></div>
-											<div class="col-10"><a href="#" class="image fit"><img src="images/twokids.jpg" alt="twokids" /></a></div>
-											<div class="col-6"><a href="#" class="image fit"><img src="images/" alt="" /></a></div>
-											<div class="col-6"><a href="#" class="image fit"><img src="images/" alt="" /></a></div>
-										</div>
-									</div>
-									<a href="#" class="button icon fa-file-alt">More</a>
-								</section>
-							</div>
+					<div class="col-12 col-md-3">
+                        <!-- Sidebar -->
+                        <div id="sidebar">
+                            <section class="thumbnails">
+                                <h3>More programs</h3>
+                                <div class="grid">
+                                    <div class="row gtr-50">
+                                        <div class="col-5"><a href="programs.html#programs-table" class="image fit"><img src="images/fitness.jpg" alt="" /></a></div>
+                                        <div class="col-5"><a href="#" class="image fit"><img src="images/aboutus.jpeg" alt="" /></a></div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
                     </div>
-                    <div class="col-9 col-12-medium imp-medium">
+                    <div class="col-12 col-md-9 imp-medium" id="schedules">
                         <!--  schedule  -->
-                        <table class="table table-hover">
+                        <h3>Swim Lessons Schedule</h3>
+                        <table class="table table-responsive table-hover">
                             <caption>October - December 2023 Exercise Schedule</caption>
                             <thead class="thead-dark">
                                 <tr>
@@ -241,9 +244,9 @@
                       <!-- I don't think it's necessary here -->
                     </div>
                     </div>
-                    <div id="facility_schedule" class="col-9 col-12-medium imp-medium">
+                    <div id="facility_schedule" class="col-12 col-md-9 imp-medium">
                         <!--  facility schedule  -->
-                        <table class="table table-hover">
+                        <table class="table table-responsive table-hover">
                             <caption>October - December 2023 Facility Hours</caption>
                             <thead class="thead-dark">
                                 <tr>
@@ -307,16 +310,16 @@
 		</section>
 		
 		<!-- Footer -->
-		<div class="footer">
+		<footer>
 
 			<!-- footer-nav & signup -->
 			<div class="row">
-				<div class="logo col-4">
+				<div class="logo col-12 col-md-4">
 					<a href="/" title="Splashes">
 						<img src="images/logo.png" alt="Logo" width="200">
 					</a>
 				</div>
-				<div class="col-4">
+				<div class="col-12 col-md-4">
 					<nav class="footer-nav">
 						<ul>
 							<li><a href="/">News</a></li>
@@ -326,7 +329,7 @@
 						</ul>
 					</nav>
 				</div>
-				<div class="social col-3">
+				<div class="social col-12 col-md-4">
 					<div class="social-icons">
 						<a href="#" class="fa fa-facebook-square"></a>
 						<a href="#" class="fa fa-instagram"></a>
@@ -335,7 +338,7 @@
 					</div>
 					<div class="footer-signup">
 						<p>Be the first to know about our programs and upcoming events!</p>
-						<button class="btn btn-info large subscribe-btn">Subscribe</button>
+						<button class="btn btn-info large subscribe-btn" onclick="window.location.href='signup.html';">Subscribe</button>
 					</div>
 				</div>
 			</div>
@@ -349,7 +352,7 @@
 					<p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
 				</div>
 			</div>
-		</div>
+		</footer>
 
 
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->

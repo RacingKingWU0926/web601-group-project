@@ -16,35 +16,41 @@
 	<body id="index">
 
 		<!-- Main Header -->
-		<header id="header-wrapper">
+		<header id="header-wrapper" class="sticky-top">
 			<div class="main-header">
 				<!-- Logo -->
 				<div class="logo">
-					<a href="/" title="Splashes">
+					<a href="index.html" title="Splashes">
 						<img src="images/logo.png" alt="Logo" width="125">
 					</a>
 				</div>
 				<!-- Main Nav -->
-				<div>
-					<nav id="main-nav">
-						<div class="navbar-collapse">
-							<ul class="navbar">
-								<li class="nav-item active">
-									<a href="/">home</a>
-								</li>
-								<li class="nav-item">
-									<a href="programs.html">programs</a>
-								</li>
-								<li class="nav-item">
-									<a href="schedules.html">schedules</a>
-								</li>
-								<li class="nav-item">
-									<a href="aboutus.html">about us</a>
-								</li>
-							</ul>
-						</div>
-					</nav>
-				</div>
+				<nav class="main-nav navbar navbar-expand-xl navbar-dark">
+					<!-- Hamburger Menu Button -->
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarNavDropdown">
+						<ul class="navbar navbar-nav">
+							<li class="nav-item active">
+								<a href="/">home</a>
+							</li>
+							<li class="nav-item">
+								<a href="programs.html">programs</a>
+							</li>
+							<li class="nav-item">
+								<a href="schedules.html">schedules</a>
+							</li>
+							<li class="nav-item">
+								<a href="aboutus.html">about us</a>
+							</li>
+							<li class="nav-item">
+								<a href="signup.html">sign up</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
 			</div>
 		</header>
 
@@ -56,27 +62,25 @@
 						<h2>learn to swim at splashes</h2>
 						<h6>Monthly swim lessons open!</h6>
 					</div>
-					<div class="banner-signup" class="col-5 col-12-medium">
-						<a href="signup.html" class="button large icon solid fa-arrow-circle-right">Sign up today!</a></li>
-					</div>
 				</div>
 			</div>
 		</div>
 
 		<main>
-			<div class="main-text">
-				<p>Welcome to Splashes! Step into a world where the crystal-clear waters of the pool beckon, inviting you to experience the ultimate refreshment and relaxation. Whether you're a dedicated lap swimmer, a sun-soaked lounging enthusiast, or a spirited cannonball connoisseur, our aquatic oasis is your haven. Here, the gentle lull of water and the joyous laughter of poolside fun come together to create moments of pure bliss. Dive into the serene depths, bask in the warm embrace of the sun, and let the cool waters of our pool wash away your cares. At Splashes, we celebrate the magic of swimming in the pool, where every plunge is an opportunity to make a memory.</p>
+			<div id="welcome">
+				<h2>Welcome to Splashes!</h2>
+				<p>Step into a world where the crystal-clear waters of the pool beckon, inviting you to experience the ultimate refreshment and relaxation. Whether you're a dedicated lap swimmer, a sun-soaked lounging enthusiast, or a spirited cannonball connoisseur, our aquatic oasis is your haven. Here, the gentle lull of water and the joyous laughter of poolside fun come together to create moments of pure bliss. Dive into the serene depths, bask in the warm embrace of the sun, and let the cool waters of our pool wash away your cares. At Splashes, we celebrate the magic of swimming in the pool, where every plunge is an opportunity to make a memory.</p>
 			</div>
 
 			<!-- Features -->
 			<div id="features-wrapper">
 				<div class="container">
 					<div class="row">
-						<div class="col-4 col-12-medium">
+						<div class="col-12 col-md-4">
 
 							<!-- Box -->
 								<section class="box feature">
-									<a href="#" class="image featured"><img src="images/family.jpg" alt="" /></a>
+									<a href="programs.html#family-swim-program" class="image featured"><img src="images/family.jpg" alt="" /></a>
 									<div class="inner">
 										<header>
 											<h2>Family Swim</h2>
@@ -87,11 +91,11 @@
 								</section>
 
 						</div>
-						<div class="col-4 col-12-medium">
+						<div class="col-12 col-md-4">
 
 							<!-- Box -->
 								<section class="box feature">
-									<a href="#" class="image featured"><img src="images/babyswim.jpg" alt="" /></a>
+									<a href="programs.html#infant-swim-program" class="image featured"><img src="images/babyswim.jpg" alt="" /></a>
 									<div class="inner">
 										<header>
 											<h2>Infant Swim</h2>
@@ -102,11 +106,11 @@
 								</section>
 
 						</div>
-						<div class="col-4 col-12-medium">
+						<div class="col-12 col-md-4">
 
 							<!-- Box -->
 								<section class="box feature">
-									<a href="#" class="image featured"><img src="images/tube.jpg" alt="" /></a>
+									<a href="programs.html#water-safety-program" class="image featured"><img src="images/tube.jpg" alt="" /></a>
 									<div class="inner">
 										<header>
 											<h2>Water Safety</h2>
@@ -125,33 +129,32 @@
 			<div id="subfeature-wrapper">
 				<div class="container">
 					<div class="row gtr-200">
-						<div class="col-4 col-12-medium">
+						<div class="col-12 col-md-4">
 
 							<!-- Sidebar -->
 								<div id="sidebar">
 									<section class="thumbnails">
-										<h3>Image here</h3>
+										<h3>More programs</h3>
 										<div class="grid">
 											<div class="row gtr-50">
-												<div class="col-6"><a href="#" class="image fit"><img src="images/" alt="" /></a></div>
-												<div class="col-6"><a href="#" class="image fit"><img src="images/" alt="" /></a></div>
-												<div class="col-6"><a href="#" class="image fit"><img src="images/" alt="" /></a></div>
-												<div class="col-6"><a href="#" class="image fit"><img src="images/" alt="" /></a></div>
+												<div class="col-5"><a href="programs.html#programs-table" class="image fit"><img src="images/fitness.jpg" alt="" /></a></div>
+												<div class="col-5"><a href="#" class="image fit"><img src="images/aboutus.jpeg" alt="" /></a></div>
 											</div>
 										</div>
-										<a href="#" class="button icon fa-file-alt">More</a>
 									</section>
 								</div>
 
 						</div>
-						<div class="col-8 col-12-medium imp-medium">
+						<div class="col-12 col-md-8 imp-medium">
 
 							<!-- Content -->
 								<div id="content">
 									<section class="last">
 										<h2>So what's this all about?</h2>
-										<p>contents about who we are </p>
-										<a href="#" class="button icon solid fa-arrow-circle-right">Continue Reading</a>
+										<p>At Splashes, we offer a range of exciting programs tailored to different age groups and skill levels. From infants taking their first dip to older kids perfecting their strokes, we have something for everyone. Our certified instructors are not only experts in swimming but also enthusiastic mentors who create a nurturing atmosphere where your child can thrive.</p>
+										<p>But we're not just about swimming lessons; we're about creating lasting memories. Our family swim sessions bring loved ones together, our infant swim program ensures the safety of your littlest family members, and our commitment to water safety means you can relax knowing your children are in good hands. At Splashes, we're dedicated to making every aquatic adventure an unforgettable experience for your family.</p>
+										<p>So, if you're looking for a place where your child can have a splashing good time while learning a crucial life skill, you've come to the right place. Join us at Splashes, and let's make a splash in your child's journey to becoming a confident and skilled swimmer!</p>
+										<a href="schedules.html#schedules-table" class="button icon solid fa-arrow-circle-right">Check out our sessions!</a>
 									</section>
 								</div>
 
@@ -168,16 +171,16 @@
 		</section>
 		
 		<!-- Footer -->
-		<div class="footer">
+		<footer>
 
 			<!-- footer-nav & signup -->
 			<div class="row">
-				<div class="logo col-4">
+				<div class="logo col-12 col-md-4">
 					<a href="/" title="Splashes">
 						<img src="images/logo.png" alt="Logo" width="200">
 					</a>
 				</div>
-				<div class="col-4">
+				<div class="col-12 col-md-4">
 					<nav class="footer-nav">
 						<ul>
 							<li><a href="/">News</a></li>
@@ -187,7 +190,7 @@
 						</ul>
 					</nav>
 				</div>
-				<div class="social col-3">
+				<div class="social col-12 col-md-4">
 					<div class="social-icons">
 						<a href="#" class="fa fa-facebook-square"></a>
 						<a href="#" class="fa fa-instagram"></a>
@@ -196,7 +199,7 @@
 					</div>
 					<div class="footer-signup">
 						<p>Be the first to know about our programs and upcoming events!</p>
-						<button class="btn btn-info large subscribe-btn">Subscribe</button>
+						<button class="btn btn-info large subscribe-btn" onclick="window.location.href='signup.html';">Subscribe</button>
 					</div>
 				</div>
 			</div>
@@ -210,8 +213,7 @@
 					<p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
 				</div>
 			</div>
-		</div>
-
+		</footer>
 
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
