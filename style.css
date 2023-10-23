@@ -254,7 +254,6 @@ ol, ul {
 		input[type="reset"].large,
 		button.large,
 		.button.large {
-			font-size: 2.25em;
 			padding: 0.8em 0.9em;
 		}
 
@@ -378,24 +377,6 @@ ol, ul {
 				color: #fff;
 			}
 
-		.banner-signup {
-			display: flex;
-			padding: 7em;
-			/* max-width: 30%; */
-			justify-content: right;
-		}
-
-			.banner-signup .button {
-				width: 70%;
-				margin-bottom: 1em;
-			}
-
-			.banner-signup .button.icon:before {
-				position: absolute;
-				right: 0.15em;
-				top: 50%;
-				margin-top: -0.5em;
-			}
 
 /* Partners */
 
@@ -656,4 +637,26 @@ ol, ul {
 #sendinfo input[type="email"] {
     width: 200px;
     margin-right: 10px;
+}
+
+
+/* Media Queries */
+/* Navbar: collapse for lg- viewport */
+@media (max-width: 1200px) {
+	.main-header {
+		display: flex;
+		justify-content: space-between;
+	}
+    .logo {
+        margin-top: -14px;
+		margin-left: 2em;
+    }
+
+	#navbarNavDropdown ul {
+		/* background-color: red; */
+		margin-top: 2em;
+	}
+    #navbarNavDropdown ul li a {
+		font-size: 15px;
+    }
 }
