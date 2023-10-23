@@ -381,12 +381,13 @@ ol, ul {
 		.banner-signup {
 			display: flex;
 			padding: 7em;
+			height: fit-content;
 			/* max-width: 30%; */
 			justify-content: right;
 		}
 
 			.banner-signup .button {
-				width: 70%;
+				width: 80%;
 				margin-bottom: 1em;
 			}
 
@@ -394,7 +395,7 @@ ol, ul {
 				position: absolute;
 				right: 0.15em;
 				top: 50%;
-				margin-top: -0.5em;
+				margin-top: -1em;
 			}
 
 /* Partners */
