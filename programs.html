@@ -12,6 +12,9 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
 		<link rel="stylesheet" href="style.css">
 
+		<!-- Scripts -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 	</head>
 	<body id="programs">
 
@@ -59,10 +62,113 @@
 			</div>
 		</div>
 
-		<div>
-			<p style="font-size: 24px;">will add more stuff here.</p>
-		</div>
+		<div class="container">
+			<h2>Our Swim Programs</h2>
+			<div id="swim-programs">
+				<article class="row program-paragraph">
+					<div class="col-12 col-md-4">
+						<img src="images/family.jpg">
+					</div>
+					<div class="col-12 col-md-8">
+						<div class="media-body">
+							<h4>Family Swim</h4>
+							<p>We believe in the power of family and the pure joy of sharing moments together. Our family swim experience is a celebration of togetherness, where parents, children, and all loved ones can unite in the embrace of our inviting waters. Whether it's teaching your little ones to float, enjoying friendly races, or simply relishing the laughter that fills the air, our family swim sessions create lasting bonds and cherished memories. At Splashes, we understand the importance of these shared moments, and we're here to make every family swim an unforgettable and heartwarming experience.</p>
+							<button class="btn-info">Learn more</button>
+						</div>
+					</div>
+				</article>
 
+				<article class="row program-paragraph">
+					<div class="col-12 col-md-4">
+						<img src="images/babyswim.jpg">
+					</div>
+					<div class="col-12 col-md-8">
+						<div class="media-body">
+							<h4>Infant Swim</h4>
+							<p>Our Infant Swim program is dedicated to providing a secure and nurturing environment for babies as they take their first steps into the aquatic world. Our certified instructors are trained to guide infants through gentle water introduction, helping them develop essential water-safety skills. We prioritize the comfort and confidence of both babies and parents, ensuring that every experience is a positive and joyful one. At Splashes, we're committed to making infant swim a valuable and bonding experience for you and your little one, setting the foundation for a lifetime of water enjoyment.</p>
+							<button class="btn-info">Learn more</button>
+						</div>
+					</div>
+				</article>
+
+				<article class="row program-paragraph">
+					<div class="col-12 col-md-4">
+						<img src="images/tube.jpg">
+					</div>
+					<div class="col-12 col-md-8">
+						<div class="media-body">
+							<h4>Water Safety</h4>
+							<p>Our daily check under protection ensures that all safety measures are rigorously maintained to guarantee your peace of mind. From assessing water quality and temperature to inspecting all safety equipment and lifeguard readiness, we leave no stone unturned in our commitment to creating a secure space for you and your loved ones. At Splashes, you can relax and enjoy your time in the water, knowing that our vigilance in water safety is a daily promise that we uphold with utmost care and diligence.</p>
+							<button class="btn-info">Learn more</button>
+						</div>
+					</div>
+				</article>
+
+			</div>
+
+			<h2>Other Programs We Offer</h2>
+			<div id="programs-table">
+				<div class="table-responsive">
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Programs</th>
+								<th>Elementary</th>
+								<th>Teen</th>
+								<th>Adult</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>Fitness</td>
+								<td>Group Exercises</td>
+								<td>Youth Sports</td>
+								<td>Personal Training</td>
+							</tr>
+							<tr>
+								<th>Camp</td>
+								<td>Not Available</td>
+								<td>Day Camp</td>
+								<td>Biking Camp</td>
+							</tr>
+							<tr>
+								<th>Community</td>
+								<td>Global Change Agents</td>
+								<td>Youth & Government</td>
+								<td>Not Available</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<p>Click on the programs to get more information in one go!</p>
+			</div>
+
+			<!-- Modal for selected -->
+			<div id="modal-button">
+				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#displaySelected">Confirm</button>
+			</div>
+			<div class="modal fade" id="displaySelected">
+				<div class="modal-dialog bg-light">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5>My selected programs:</h5>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<div class="modal-body">
+							<div id="result"></div>
+						</div>
+						<div class="modal-footer">
+							<form class="was-validated">
+								<div id="sendinfo">
+									<input type="email" class="form-control" placeholder="johndoe@gmail.com" required>
+									<button id="submit-atv" class="btn btn-info" type="submit">Get Info</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<!-- Partners -->
 		<section>
@@ -114,7 +220,7 @@
 			</div>
 		</div>
 
-
+	<script src="js/programs.js"></script>
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
